@@ -8,6 +8,8 @@ import Theory from "./pages/Theory";
 import Calculators from "./pages/Calculators";
 import Tasks from "./pages/Tasks";
 import NotFound from "./pages/NotFound";
+import GraphCalculator from "./pages/calculators/GraphCalculator";
+import MatrixCalculator from "./pages/calculators/MatrixCalculator";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +23,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/theory" element={<Theory />} />
           <Route path="/calculators" element={<Calculators />} />
+          <Route path="/calculators/graph" element={<GraphCalculator />} />
+          <Route path="/calculators/matrix" element={<MatrixCalculator />} />
           <Route path="/tasks" element={<Tasks />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
